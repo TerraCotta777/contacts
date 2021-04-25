@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/272dc411f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="preload">
+		<img class="preload__car" src="img/car.svg" alt="car">
+		<h3>Almost there...</h3>
+		<img class="preload__tree1" src="img/tree.svg" alt="tree1">
+		<img class="preload__tree2" src="img/tree.svg" alt="tree2">
+		<img class="preload__tree3" src="img/tree.svg" alt="tree3">
+	</div>
+
+	<main class="main">
+
+		<header class="header">
+			<div class="container">
+				<h1 class="header__title">Contacts</h1>
+			</div>
+		</header>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__searching-buttons">
+					<input type="text" name="Search" class="contacts__search" placeholder="Search">
+					<div class="contacts__filter">
+						<a href="javascript:void(0)">Status</a>
+						<div class="contacts__status-dropdown dropdown dropdown-mobile">
+							<div class="dropdown__selector">colleague</div>
+							<div class="dropdown__selector">family</div>
+							<div class="dropdown__selector">friend</div>
+							<div class="dropdown__selector">all</div>
+						</div>
+					</div>
+				</div>
+
+				<input type="text" class="contacts__add">
+
+				<div class="contacts__cards">
+					<ul class="contacts__column-titles contacts__contact">
+						<li class="contacts__column-title contact__id">ID</li>
+						<li class="contacts__column-title contact__photo">Photo</li>
+						<li class="contacts__column-title contact__name">Name</li>
+						<li class="contacts__column-title contact__phone">Phone</li>
+						<li class="contacts__column-title contact__email">e-mail</li>
+						<li class="contacts__column-title contact__address">Address</li>
+						<li class="contacts__column-title contact__status">Relation<i class="fas fa-chevron-down"></i>
+							<div class="contacts__status-dropdown dropdown">
+								<div class="dropdown__selector">colleague</div>
+								<div class="dropdown__selector">family</div>
+								<div class="dropdown__selector">friend</div>
+								<div class="dropdown__selector">all</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
